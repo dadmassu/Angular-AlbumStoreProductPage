@@ -37,7 +37,8 @@ describe('ProductPageComponent', () => {
 
   it(`should contain the app-product-description element @app-product-description-selector`, async(() => {
     since('The ProductPageComponent doesn\'t exist for some reason.').expect(productPageComponentExists).toBe(true);
-    since('The ProductDescriptionComponent doesn\'t exist - have you run the `ng` command to generate it yet?').expect(productDescriptionComponentExists).toBe(true);
+    since('The ProductDescriptionComponent doesn\'t exist - have you run the `ng` command to generate it yet?')
+      .expect(productDescriptionComponentExists).toBe(true);
 
     const ProductPageFixture = TestBed.createComponent(ProductPageComponent);
     ProductPageFixture.detectChanges();
